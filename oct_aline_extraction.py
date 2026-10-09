@@ -77,7 +77,7 @@ OUTPUT_DIR = f"./5px_extracted_alines_{CLASSIFICATION_TASK}"  # output folder
 # e.g. {'x': 0, 'y': 0, 'w': 512, 'h': 512}. Use None for the full image.
 CROP = None
 
-COLUMN_STEP = 5                 # take one A-line every N columns
+COLUMN_STEP = 10                 # take one A-line every N columns
 EXTRACTION_DEPTH_PIXELS = 500   # A-line depth below the detected surface (pixels)
 NORMALIZE = True                # True: scale each A-line to [0, 1]; False: keep raw intensity
 
