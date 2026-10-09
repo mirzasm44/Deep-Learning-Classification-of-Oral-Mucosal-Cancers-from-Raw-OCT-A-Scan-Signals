@@ -82,7 +82,7 @@ except ImportError:  # constant removed in newer PyTorch versions
 BINARY = False                 # True: Non_Cancer vs OSCC | False: Normal/CIS/WD-OSCC/PD-OSCC
 DATA_PATH = (
     './extracted_alines_binary/combined_OCT_dataset.npz' if BINARY
-    else './edited_extracted_alines_multiclass/combined_OCT_dataset.npz'
+    else './extracted_alines_multiclass/combined_OCT_dataset.npz'
 )
 OUTPUT_DIR = './output_b_all_multiclass'
 SEED = 42
