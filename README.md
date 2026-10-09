@@ -93,9 +93,3 @@ Each model writes to `<OUTPUT_DIR>/<model>_<task>_<timestamp>/`:
 
 A multi-model run also creates `ALL_MODELS_<timestamp>/` with `all_models_summary.csv/.json` and `cross_model_comparison.png`.
 
-## Notes
-
-- Seeds are fixed (`SEED = 42`) for reproducible splits and training.
-- Class weights are computed from the training split only.
-- Validation and test data are never augmented.
-- B-scan aggregation: `mean_prob` (average probabilities) or `majority_vote`, set via `BSCAN_AGG_METHOD`.
